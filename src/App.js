@@ -10,6 +10,7 @@ function App() {
   );
 }
 
+// Create a counting component
 function Counting() {
   const [counts, setCount] = useState(0);
   const increaseNumber = () => { setCount(counts + 1) }
@@ -19,6 +20,7 @@ function Counting() {
     }
   }
   return (
+    // Display results on UI
     <div>
       <h1>Counting numbers</h1>
       <h2 className='mb-3'>Count: {counts}</h2>
