@@ -5,7 +5,6 @@ import { useState } from 'react';
 function App() {
   return (
     <div className="App">
-      <h1>Counting numbers</h1>
       <Counting></Counting>
     </div>
   );
@@ -21,9 +20,10 @@ function Counting() {
   }
   return (
     <div>
-      <h2>Count: {counts}</h2>
-      <button onClick={increaseNumber}>Inrease</button>
-      <button onClick={decreaseNumber}>Decrease</button>
+      <h1>Counting numbers</h1>
+      <h2 className='mb-3'>Count: {counts}</h2>
+      <button className='btn btn-success' onClick={increaseNumber}>Inrease</button>
+      <button className='btn btn-danger ms-3' onClick={decreaseNumber}>Decrease</button>
     </div>
   )
 }
